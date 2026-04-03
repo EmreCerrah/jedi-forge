@@ -1,0 +1,11 @@
+{
+  "name": "jedi-marketplace",
+  "owner": { "name": "Emre" },
+  "plugins": [
+    {
+      "name": "jedi",
+      "source": "./jedi",
+      "description": "Jedi Order of Clean Code"
+    }
+  ]
+}

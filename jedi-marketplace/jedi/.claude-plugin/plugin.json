@@ -1,0 +1,21 @@
+{
+  "name": "jedi",
+  "description": "Jedi Order of Clean Code - Star Wars themed crusade commands + specialist squads for Java/Spring + (optional) Next.js",
+  "version": "1.0.0",
+  "author": {
+    "name": "Emre (customized)"
+  },
+  "homepage": "https://example.invalid/jedi-order",
+  "repository": "https://example.invalid/jedi-order",
+  "license": "MIT",
+  "keywords": [
+    "java",
+    "spring",
+    "clean-architecture",
+    "tdd",
+    "docker",
+    "code-quality",
+    "star-wars",
+    "agents"
+  ]
+}
