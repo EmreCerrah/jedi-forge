@@ -1,0 +1,273 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #030407;
+    --jedi-blue: #00d2ff;
+    --jedi-green: #39ff14;
+    --sith-red: #ff003c;
+    --text-primary: #e0e0e0;
+    --text-muted: #a0aab2;
+    --glass-bg: rgba(14, 20, 30, 0.6);
+    --glass-border: rgba(100, 150, 255, 0.15);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Starry Background (CSS Multiple Box Shadows) */
+#stars, #stars2, #stars3 {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background: transparent;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Text Glows */
+.glow-blue {
+    color: #fff;
+    text-shadow: 0 0 10px var(--jedi-blue), 0 0 20px var(--jedi-blue), 0 0 40px var(--jedi-blue);
+}
+
+.glow-sith-red {
+    color: #fff;
+    text-shadow: 0 0 10px var(--sith-red), 0 0 20px var(--sith-red), 0 0 40px var(--sith-red);
+}
+
+.glow-jedi-green {
+    color: #fff;
+    text-shadow: 0 0 10px var(--jedi-green), 0 0 20px var(--jedi-green);
+}
+
+.glow-jedi-blue {
+    color: #fff;
+    text-shadow: 0 0 10px var(--jedi-blue), 0 0 20px var(--jedi-blue);
+}
+
+.glow-green-text {
+    color: #ccffcc;
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
+}
+
+/* Sections & Typography */
+.hero {
+    text-align: center;
+    padding: 10vh 0;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+/* Glassmorphism Panels */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255,255,255,0.02);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-panel:hover {
+    border-color: rgba(100, 150, 255, 0.3);
+}
+
+.sith-zone {
+    border-color: rgba(255, 0, 60, 0.2);
+}
+.sith-zone:hover {
+    border-color: rgba(255, 0, 60, 0.5);
+    box-shadow: 0 10px 40px rgba(255, 0, 60, 0.1), inset 0 0 15px rgba(255,0,0,0.05);
+}
+
+.glass-panel h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Standard Buttons and Terminals */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-jedi {
+    background: transparent;
+    color: var(--jedi-blue);
+    border: 2px solid var(--jedi-blue);
+    box-shadow: 0 0 10px var(--jedi-blue), inset 0 0 10px var(--jedi-blue);
+}
+
+.btn-jedi:hover {
+    background: var(--jedi-blue);
+    color: #000;
+    box-shadow: 0 0 30px var(--jedi-blue), inset 0 0 10px #fff;
+    transform: translateY(-2px);
+}
+
+/* Terminal Styles */
+.terminal-container {
+    background: #0a0e14;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #1a2332;
+}
+
+.terminal-label {
+    color: #647385;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+.terminal-label:first-child { margin-top: 0; }
+
+.code-block {
+    font-family: 'Fira Code', monospace;
+    background: #05070a;
+    padding: 1rem;
+    border-radius: 4px;
+    color: #e0e0e0;
+    border-left: 3px solid var(--jedi-green);
+    overflow-x: auto;
+}
+
+.code-block .prompt {
+    color: var(--jedi-green);
+    margin-right: 0.5rem;
+    user-select: none;
+}
+
+.code-bad {
+    font-family: 'Fira Code', monospace;
+    background: #1a0505;
+    padding: 0.8rem;
+    border-radius: 4px;
+    color: #ff6b6b;
+    border-left: 3px solid var(--sith-red);
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Cards Grid */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: rgba(10, 15, 25, 0.7);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 3px;
+    background: transparent;
+}
+
+.card-blue::before { background: var(--jedi-blue); box-shadow: 0 0 10px var(--jedi-blue); }
+.card-green::before { background: var(--jedi-green); box-shadow: 0 0 10px var(--jedi-green); }
+.card-red::before { background: var(--sith-red); box-shadow: 0 0 10px var(--sith-red); }
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(20, 25, 35, 0.8);
+}
+.card-red:hover {
+    background: rgba(30, 10, 15, 0.8);
+    border-color: rgba(255, 0, 60, 0.3);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--glass-border);
+    color: var(--text-muted);
+}
+footer .small {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title { font-size: 2.5rem; }
+    .glass-panel { padding: 2rem; }
+}
+
+.small-desc { font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-muted); }
+.code-bad { font-family: 'Fira Code', monospace; background: #1a0505; padding: 0.8rem; border-radius: 4px; color: #ff6b6b; border-left: 3px solid var(--sith-red); margin-top: 1rem; font-size: 0.9rem; }

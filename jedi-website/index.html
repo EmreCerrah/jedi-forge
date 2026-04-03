@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jedi Order of Clean Code</title>
+    <!-- Google Fonts for sci-fi look and clean body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Animated starry background -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
+    <div class="content-wrapper">
+      <header class="hero">
+        <h1 class="glow-blue title">The Jedi Order of Sacred Code</h1>
+        <p class="subtitle typing-effect glow-green-text">"May thy types be strong, thy builds be green, and the Force flow eternal through thy logic."</p>
+        <a href="#crusades" class="btn btn-jedi">Assemble the Council</a>
+      </header>
+
+      <main>
+        
+        <!-- INTRO & INSTALLATION -->
+        <section id="installation" class="glass-panel">
+          <h2 class="glow-jedi-green"><span class="icon">🌌</span> Initiation Rites (Installation)</h2>
+          <p class="description">Three rites of initiation. That is all that stands between you and pure codebase alignment. A Jedi's codebase is their life; build it with honor.</p>
+          
+          <div class="terminal-container">
+            <p class="terminal-label">1. Commune with the Force</p>
+            <div class="code-block">
+              <span class="prompt">$</span> /plugin marketplace add emre/jedi
+            </div>
+            <p class="terminal-label">2. Receive the Lightsaber</p>
+            <div class="code-block">
+              <span class="prompt">$</span> /plugin install jedi@emre-jedi
+            </div>
+            <p class="terminal-label">3. Summon the Jedi High Council (System Scan)</p>
+            <div class="code-block">
+              <span class="prompt">$</span> /jedi:council-report
+            </div>
+          </div>
+        </section>
+
+        <!-- THE JEDI CRUSADES (CAPABILITIES) -->
+        <section id="crusades" class="glass-panel">
+          <h2 class="glow-jedi-blue"><span class="icon">✨</span> The Jedi Crusades</h2>
+          <p class="description">Our Jedi Masters deploy parallel squads of Force-powered agents across your codebase. They scan. They judge. They PURIFY. Call upon them using the sacred commands.</p>
+          
+          <div class="grid-cards">
+            
+            <div class="card card-blue">
+              <h3><span class="icon">🏯</span> The Architecture Sentinels</h3>
+              <p>Guarding the boundaries of the Domain. Clean Architecture must be defended with adamantium discipline.</p>
+              
+              <div class="code-block" style="margin-top: 1rem;"><span class="prompt">$</span> /jedi:sense_architecture</div>
+              <p class="small-desc">Uses Force Sight to detect architectural violations and cross-domain smuggling across the galaxy.</p>
+              
+              <div class="code-block" style="margin-top: 1rem;"><span class="prompt">$</span> /jedi:force_refactor-architecture</div>
+              <p class="small-desc">Force Chokes the bad code and cleanly refactors it into pure, isolated DDD modules.</p>
+            </div>
+            
+            <div class="card card-green">
+              <h3><span class="icon">🛡️</span> The Test Commanders (Red-Green)</h3>
+              <p>If it is not tested, it is just an illusion. We deal in PROOF. Relying on 'expect(true).toBe(true)' is a Sith trick to manipulate your mind.</p>
+              
+              <div class="code-block" style="margin-top: 1rem;"><span class="prompt">$</span> /jedi:sense_testing</div>
+              <p class="small-desc">Scans unit vs integration test readiness. Exposes your lack of faith (coverage).</p>
+              
+              <div class="code-block" style="margin-top: 1rem;"><span class="prompt">$</span> /jedi:force_write-tests</div>
+              <p class="small-desc">Triggers the Clone Cloning facility. Generates highly assertive, mutation-proof test suites.</p>
+            </div>
+            
+            <div class="card card-blue">
+              <h3><span class="icon">📦</span> Dependency Wardens</h3>
+              <p>Audit every package line. Evict the unworthy dependencies. The Maven and Gradle supply lines must remain PURE and unbloated.</p>
+              
+              <div class="code-block" style="margin-top: 1rem;"><span class="prompt">$</span> /jedi:sense_dependencies</div>
+              <p class="small-desc">Interrogates the Trade Federation of dependencies. Finds out which ones are secret Separatist bloatware.</p>
+            </div>
+            
+            <div class="card card-green">
+              <h3><span class="icon">🔒</span> Holocron Security Scanners</h3>
+              <p>No secret shall be cast into the void of the repository. We lock credentials in the deepest encrypted vaults, far from the Sith's reach.</p>
+              
+              <div class="code-block" style="margin-top: 1rem;"><span class="prompt">$</span> /jedi:sense_security</div>
+              <p class="small-desc">Scans for hardcoded AWS keys and Sith espionage artifacts left in plain text.</p>
+
+              <div class="code-block" style="margin-top: 1rem;"><span class="prompt">$</span> /jedi:holocron_system-map</div>
+              <p class="small-desc">Generates a sacred Holocron map of your entire system's security boundaries.</p>
+            </div>
+
+            <div class="card card-blue">
+              <h3><span class="icon">🚀</span> Starlight Docker Optimizers</h3>
+              <p>Your Docker image should be as fast as the Millennium Falcon, not as slow as a Jawa Sandcrawler.</p>
+              
+              <div class="code-block" style="margin-top: 1rem;"><span class="prompt">$</span> /jedi:force_docker-optimize</div>
+              <p class="small-desc">Compresses the cargo bay of your Dockerfile for lightspeed builds, throwing away useless intermediate layers.</p>
+            </div>
+            
+          </div>
+        </section>
+
+        <!-- SITH ANTI-PATTERNS (CODEX ABOMINATUS) -->
+        <section id="sith" class="glass-panel sith-zone">
+          <h2 class="glow-sith-red"><span class="icon">🔴</span> The Sith Code (Codex Abominatus)</h2>
+          <p class="description">Know thy enemy, Padawan. These are the abominations that fester in undisciplined codebases—growing in the DARKNESS, feeding on negligence, and striking down maintainability.</p>
+          
+          <div class="grid-cards">
+            
+            <div class="card card-red">
+              <h3 class="glow-sith-red">Darth 'Object' Type</h3>
+              <p>A corrupted type of the Dark Side. It spreads through Java/Spring like a plague—one untyped <code>Map&lt;String, Object&gt;</code> infects every boundary it touches, silently disabling the Type Shields. The Jedi Council WEEPS.</p>
+              <div class="code-bad">Map&lt;String, Object&gt; payload; /* Unlimited Power! */</div>
+            </div>
+            
+            <div class="card card-red">
+              <h3 class="glow-sith-red">The God-Class Death Star</h3>
+              <p>A staggering 5,000-line `@Service` or mega-component lurking in the depths. It handles validation, UI rendering, HTTP requests, and Database persistence. No Jedi dares refactor it. It is too big to fail. Until one thermal exhaust port (bug) destroys the whole thing.</p>
+            </div>
+            
+            <div class="card card-red">
+              <h3 class="glow-sith-red">The Phantom Menace (Silent Catch)</h3>
+              <p>It devours exceptions and casts them into the void. When production burns in the fires of exceptions, your DataDog logs show absolutely NOTHING. Pure, absolute silence. Like Obi-Wan striking Vader's robe.</p>
+              <div class="code-bad">catch (e) { /* Must be the wind... */ }</div>
+            </div>
+
+            <div class="card card-red">
+              <h3 class="glow-sith-red">Clone Trooper Protocol (Copy Paste)</h3>
+              <p>Thousands of duplicated lines spread through the galaxy, looking totally identical but having microscopic, undetectable mutations. Fixing a bug requires fixing it in 200,000 units, with a million more well on the way.</p>
+            </div>
+
+            <div class="card card-red">
+              <h3 class="glow-sith-red">Jabba The Bloat (Dependencies)</h3>
+              <p>Your application's target JAR weighs 800 MB because you imported an entire galactic-scale framework just to use a single String utility. It brings 400 transitive dependencies into your inner circle.</p>
+              <div class="code-bad">implementation 'org.jabba.bloat:entire-universe:66.0.0'</div>
+            </div>
+
+            <div class="card card-red">
+              <h3 class="glow-sith-red">Order 66 (Force Push to Main)</h3>
+              <p>Bypassing the PR review Council. Overriding CI/CD pipeline checks. The ultimate act of betrayal to your fellow Jedi developers. "I am the Senate" they say, right before production crashes.</p>
+              <div class="code-bad">git push origin master -f</div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <p>May the Force be with your Compilations.</p>
+        <p class="small">The Jedi Order of Clean Code - Assembled by Emre</p>
+      </footer>
+    </div>
+    
+    <script src="./main.js"></script>
+  </body>
+</html>
