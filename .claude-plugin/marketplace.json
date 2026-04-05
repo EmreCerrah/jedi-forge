@@ -5,7 +5,7 @@
     "email": "v.emrecerrah@gmail.com"
   },
   "metadata": {
-    "description": "Jedi Order of Clean Code - Java/Spring quality plugins",
+    "description": "Jedi Forge is a Star Wars-themed AI engineering toolkit for Claude Code focused on Java and Spring projects.\n\nIt helps developers audit architecture, review testing practices, detect anti-patterns, evaluate dependency health, improve Docker readiness, and generate structured engineering reports.\n\nThe command system is intentionally simple:\n\n- Sense → audit only\n- Force → code changes\n- Holocron → documentation\n- Council → consolidated reporting\n\nJedi Forge is especially useful for teams that care about Clean Architecture, SOLID principles, TDD, and maintainable backend systems.\n\nIt is not just a themed command pack — it is an engineering workflow layer designed to bring consistency, discipline, and better decision-making into everyday development.",
     "version": "1.0.0"
   },
   "plugins": [
