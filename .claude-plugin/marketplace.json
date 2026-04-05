@@ -1,0 +1,20 @@
+{
+  "name": "jedi-forge",
+  "owner": {
+    "name": "Emre Cerrah",
+    "email": "v.emrecerrah@gmail.com"
+  },
+  "metadata": {
+    "description": "Jedi Order of Clean Code - Java/Spring quality plugins",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "jedi",
+      "source": "./jedi",
+      "description": "Star Wars themed code quality auditing for Java/Spring Boot",
+      "version": "1.0.0",
+      "author": { "name": "Emre Cerrah" }
+    }
+  ]
+}

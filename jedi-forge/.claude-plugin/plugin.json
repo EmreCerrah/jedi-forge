@@ -3,10 +3,10 @@
   "description": "Jedi Order of Clean Code - Star Wars themed crusade commands + specialist squads for Java/Spring + (optional) Next.js",
   "version": "1.0.0",
   "author": {
-    "name": "Emre (customized)"
+    "name": "Emre Cerrah"
   },
-  "homepage": "https://example.invalid/jedi-order",
-  "repository": "https://example.invalid/jedi-order",
+  "homepage": "https://emrecerrah.github.io/jedi-forge/",
+  "repository": "https://github.com/EmreCerrah/jedi-forge",
   "license": "MIT",
   "keywords": [
     "java",
